@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/">
+        <link rel="prev" href="../Kubernetes%E4%BD%BF%E7%94%A8Arthas/">
       
       
         <link rel="next" href="../nacos/">
@@ -199,8 +199,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        使用minikube安装Kubernetes
+      <a href="../redis/" class="md-nav__link">
+        Lua如何在Redis Run
       </a>
     </li>
   
@@ -214,8 +214,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Centos安装python3.8.md" class="md-nav__link">
-        Centos安装python3.8
+      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
+        GraphicsMagick使用教程
       </a>
     </li>
   
@@ -392,21 +392,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
-        GraphicsMagick使用教程
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -494,21 +479,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
-        Lua如何在Redis Run
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../synchronized%E5%85%B3%E9%94%AE%E5%AD%97/" class="md-nav__link">
         synchronized关键字
       </a>
@@ -581,7 +551,7 @@
 <h1 id="mesimoesi">MESI协议与MOESI协议<a class="headerlink" href="#mesimoesi" title="Permanent link">&para;</a></h1>
 <h3 id="cpu">cpu多核工作方式<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h3>
 <p>CPU执行为了提高效率，会向主内存中同步数据在自己的工作副本中，如下图所示
-<img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1685445520212-9fbb91fa-673f-4bcc-9857-c5906112a57f.png" />
+<img alt="" src="https://foruda.gitee.com/images/1685611797449851461/1f05f8fb_5094274.png" />
 那么对于每个CPU在处理数据的时候就不免会造成缓存和主存的数据不一致的问题， 为了解决多核cpu缓存不一致造成的数据问，MESI协议与MOESI协议由此诞生，MOESI为MESI的衍生，多了一种状态，效率要远高于MESI协议，现绝大多数 ARM 处理器使用 MOESI 协议，Cortex-A9 则使用 MESI 协议。</p>
 <h3 id="mesi">MESI协议<a class="headerlink" href="#mesi" title="Permanent link">&para;</a></h3>
 <p>MESI协议主要是四个关键字的缩写</p>
@@ -621,7 +591,7 @@ I：代表已失效（Invalidated）
 </li>
 <li>
 <p>S位。在MOESI协议中，S状态的定义发生了细微的变化。当一个Cache行状态为S时，其包含的数据并不一定与存储器一致。如果在其他CPU的Cache中不存在状态为O的副本时，该Cache行中的数据与存储器一致；如果在其他CPU的Cache中存在状态为O的副本时，Cache行中的数据与存储器不一致。
-<img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1664368636286-819a5fb5-a89e-4582-97a9-bfe3385f9009.png" /></p>
+<img alt="" src="https://foruda.gitee.com/images/1685611824384009099/0a19f04a_5094274.png" /></p>
 </li>
 </ol>
 

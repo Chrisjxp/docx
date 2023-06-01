@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../about/">
+        <link rel="prev" href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/">
       
       
         <link rel="next" href="../%E5%86%85%E5%AD%98%E5%8F%AF%E8%A7%81%E6%80%A7/">
@@ -199,8 +199,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        使用minikube安装Kubernetes
+      <a href="../redis/" class="md-nav__link">
+        Lua如何在Redis Run
       </a>
     </li>
   
@@ -214,8 +214,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Centos安装python3.8.md" class="md-nav__link">
-        Centos安装python3.8
+      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
+        GraphicsMagick使用教程
       </a>
     </li>
   
@@ -438,21 +438,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
-        GraphicsMagick使用教程
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
         MESI协议与MOESI协议
       </a>
@@ -470,21 +455,6 @@
     <li class="md-nav__item">
       <a href="../nacos/" class="md-nav__link">
         将Nacos加入到你的项目
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
-        Lua如何在Redis Run
       </a>
     </li>
   
@@ -567,7 +537,7 @@
 </code></pre>
 <p>发现网络返回数据并无异常</p>
 <p>通过阿里云监控查看服务器状态，当然也可以使用 <code>top</code> 命令或者 <code>htop</code> 命令来检查 CPU 使用率
-<img alt="" src="https://product.resources.deepdraw.biz/BJ/molly/c72d1cc7ae9547db89c7d55ed03c6a68/original/ded680d475964ad9b66e0de55c1f8501.png" /></p>
+<img alt="" src="https://foruda.gitee.com/images/1685600886850566913/667522a8_5094274.png" /></p>
 <p>发现 CPU 使用率过高，可能会导致服务器性能严重下降。</p>
 <h3 id="arthas">进入终端服务器使用Arthas<a class="headerlink" href="#arthas" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -697,8 +667,7 @@ timestamp/uptime                                                      Thu Feb 23
 &quot;C2 CompilerThread0&quot; [Internal] cpuUsage=25.92% deltaTime=64ms time=300015ms
 </code></pre>
 <p>找出对应方法进行优化</p>
-<p><img alt="" src="https://product.resources.deepdraw.biz/zj/JNBYI/8fcf8a43da4c45109e46699854b0c83b/original/15994704447b4f0ba70dd6f8ccc407c6.png" /></p>
-<p><img alt="" src="/Users/hk/Documents/GitHub/docx/mkdocs-site/iamge/2.png" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685600942796443938/2975ba19_5094274.png" /></p>
 <p>根据以上栈堆信息找到发现导致接口卡顿主要为/masaimara/ppa改接口导致，该接口主要是接收masaimara服务图片分析数据进行db落库，没有采用分批批量插入的方式插入，导致占用过的池没有释放</p>
 
 

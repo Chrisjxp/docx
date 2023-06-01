@@ -199,8 +199,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        使用minikube安装Kubernetes
+      <a href="../redis/" class="md-nav__link">
+        Lua如何在Redis Run
       </a>
     </li>
   
@@ -214,8 +214,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Centos安装python3.8.md" class="md-nav__link">
-        Centos安装python3.8
+      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
+        GraphicsMagick使用教程
       </a>
     </li>
   
@@ -477,21 +477,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
-        GraphicsMagick使用教程
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
         MESI协议与MOESI协议
       </a>
@@ -509,21 +494,6 @@
     <li class="md-nav__item">
       <a href="../nacos/" class="md-nav__link">
         将Nacos加入到你的项目
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
-        Lua如何在Redis Run
       </a>
     </li>
   
@@ -713,7 +683,7 @@ I0317 15:39:06.415533   56978 dashboard.go:127] Success! I will now quietly sit 
 </code></pre>
 <h3 id="_3">打开浏览器<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><a href="http://127.0.0.1:58992/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default">http://127.0.0.1:58992/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default</a></p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1679042313417-2fd59ab3-efa0-49a8-aac1-e6d42a096d80.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_67%2Ctext_eXVxdWUudHo%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fresize%2Cw_1500%2Climit_0" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601364205677648/67a91b05_5094274.png" /></p>
 <h3 id="_4">创建应用<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>在容器中尝试创建一个nginx</p>
 <pre><code>kubectl create deployment test-nginx --image=nginx:1.23.0
@@ -725,7 +695,7 @@ I0317 15:39:06.415533   56978 dashboard.go:127] Success! I will now quietly sit 
 <pre><code>kubectl port-forward  --address 0.0.0.0   service/test-nginx 80:80
 </code></pre>
 <p>访问niginx  <code>http://localhost/</code>
-<img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1679041514390-16a026a1-b9b9-47a1-9a51-acdb82c9b37b.png?x-oss-process=image%2Fresize%2Cw_1500%2Climit_0" /></p>
+<img alt="" src="https://foruda.gitee.com/images/1685601411125204474/2c1bd079_5094274.png" /></p>
 
 
 

@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../nacos/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../synchronized%E5%85%B3%E9%94%AE%E5%AD%97/">
+        <link rel="next" href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
@@ -197,11 +197,175 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        使用minikube安装Kubernetes
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Lua如何在Redis Run
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Lua如何在Redis Run
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    在Redis中基本用法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luaredis" class="md-nav__link">
+    Lua操作Redis基本数据结构
+  </a>
+  
+    <nav class="md-nav" aria-label="Lua操作Redis基本数据结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#luastring" class="md-nav__link">
+    Lua操作String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#luamap" class="md-nav__link">
+    Lua操作Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lualist" class="md-nav__link">
+    Lua操作List
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#luaset" class="md-nav__link">
+    Lua操作Set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#luasorted-set" class="md-nav__link">
+    Lua操作Sorted Set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luaredis_1" class="md-nav__link">
+    Lua操作Redis特殊数据结构
+  </a>
+  
+    <nav class="md-nav" aria-label="Lua操作Redis特殊数据结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#luageo" class="md-nav__link">
+    Lua操作Geo （计算上海到广州的直线距离）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#luabitmapredis" class="md-nav__link">
+    Lua操作Bitmap（修改Redis值内存偏移量）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lua" class="md-nav__link">
+    Lua实现分布式锁
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#springlua" class="md-nav__link">
+    在Spring中运行Lua
+  </a>
+  
+    <nav class="md-nav" aria-label="在Spring中运行Lua">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maven" class="md-nav__link">
+    引入maven依赖
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redistemplatespring" class="md-nav__link">
+    初始化RedisTemplate至Spring容器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redistemplatelua" class="md-nav__link">
+    使用RedisTemplate运行Lua
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lua_1" class="md-nav__link">
+    在代码中运行上述Lua脚本
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -214,8 +378,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Centos安装python3.8.md" class="md-nav__link">
-        Centos安装python3.8
+      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
+        GraphicsMagick使用教程
       </a>
     </li>
   
@@ -394,21 +558,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
-        GraphicsMagick使用教程
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
         MESI协议与MOESI协议
       </a>
@@ -427,185 +576,6 @@
       <a href="../nacos/" class="md-nav__link">
         将Nacos加入到你的项目
       </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Lua如何在Redis Run
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Lua如何在Redis Run
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#redis" class="md-nav__link">
-    在Redis中基本用法
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#luaredis" class="md-nav__link">
-    Lua操作Redis基本数据结构
-  </a>
-  
-    <nav class="md-nav" aria-label="Lua操作Redis基本数据结构">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#luastring" class="md-nav__link">
-    Lua操作String
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#luamap" class="md-nav__link">
-    Lua操作Map
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lualist" class="md-nav__link">
-    Lua操作List
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#luaset" class="md-nav__link">
-    Lua操作Set
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#luasorted-set" class="md-nav__link">
-    Lua操作Sorted Set
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#luaredis_1" class="md-nav__link">
-    Lua操作Redis特殊数据结构
-  </a>
-  
-    <nav class="md-nav" aria-label="Lua操作Redis特殊数据结构">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#luageo" class="md-nav__link">
-    Lua操作Geo （计算上海到广州的直线距离）
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#luabitmapredis" class="md-nav__link">
-    Lua操作Bitmap（修改Redis值内存偏移量）
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lua" class="md-nav__link">
-    Lua实现分布式锁
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#springlua" class="md-nav__link">
-    在Spring中运行Lua
-  </a>
-  
-    <nav class="md-nav" aria-label="在Spring中运行Lua">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#maven" class="md-nav__link">
-    引入maven依赖
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redistemplatespring" class="md-nav__link">
-    初始化RedisTemplate至Spring容器
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redistemplatelua" class="md-nav__link">
-    使用RedisTemplate运行Lua
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lua_1" class="md-nav__link">
-    在代码中运行上述Lua脚本
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -823,7 +793,7 @@
 <li><code>ARGV[2]</code>：传入argv数组中第二个元素也就是“value2”</li>
 <li>最后的参数 2 为 key值数组的长度</li>
 </ol>
-<p><img alt="" src="blob:https://www.yuque.com/3a877d5e-8e1f-4298-af37-345f27c124c4" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685612099841323833/945651be_5094274.png" /></p>
 <h3 id="luaredis">Lua操作Redis基本数据结构<a class="headerlink" href="#luaredis" title="Permanent link">&para;</a></h3>
 <h4 id="luastring">Lua操作String<a class="headerlink" href="#luastring" title="Permanent link">&para;</a></h4>
 <p>存</p>
@@ -946,7 +916,7 @@ return 1
 </code></pre>
 <p>运行以上命令相当于运行上面的Lua脚本</p>
 <p>运行结果</p>
-<p><img alt="图片" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1656753854272-73971313-0fe1-49d8-8017-8ebf9e33136d.png" /></p>
+<p><img alt="图片" src="https://foruda.gitee.com/images/1685612138649308888/574d76c6_5094274.png" /></p>
 <h4 id="lua_1">在代码中运行上述Lua脚本<a class="headerlink" href="#lua_1" title="Permanent link">&para;</a></h4>
 <pre><code> /**
      * 使用类加载器获取lua脚本
@@ -965,8 +935,6 @@ return 1
     }
 
 </code></pre>
-<p><img alt="图片" src="https://upload-images.jianshu.io/upload_images/20818082-1e482dbe419f79fa.png" /></p>
-<p><img alt="" src="/Users/hk/Documents/GitHub/docx/mkdocs-site/iamge/2.png" /></p>
 
 
 

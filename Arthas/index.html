@@ -199,8 +199,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
-        使用minikube安装Kubernetes
+      <a href="../redis/" class="md-nav__link">
+        Lua如何在Redis Run
       </a>
     </li>
   
@@ -214,8 +214,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Centos安装python3.8.md" class="md-nav__link">
-        Centos安装python3.8
+      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
+        GraphicsMagick使用教程
       </a>
     </li>
   
@@ -496,21 +496,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
-        GraphicsMagick使用教程
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
         MESI协议与MOESI协议
       </a>
@@ -528,21 +513,6 @@
     <li class="md-nav__item">
       <a href="../nacos/" class="md-nav__link">
         将Nacos加入到你的项目
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
-        Lua如何在Redis Run
       </a>
     </li>
   
@@ -684,9 +654,9 @@
 <pre><code>java -jar arthas-boot.jar
 </code></pre>
 <p><strong>输入id序号选择想要监控的进程</strong></p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1657201309265-035dda58-de18-48ce-b0fe-126b03b53ef0.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_32%2Ctext_eXVxdWUudHo%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fresize%2Cw_1124%2Climit_0" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601690371919061/b83b719c_5094274.png" /></p>
 <p>本机安装的是openJDK没有jsp、jstack、jstat等相关命令，安装后便可正常运行</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1657197815747-40597400-8d09-494f-b177-69d0b81b5098.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_32%2Ctext_eXVxdWUudHo%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601720476567056/7838b9fc_5094274.png" /></p>
 <p>安装</p>
 <pre><code>yum install java-1.8.0-openjdk-devel -y
 </code></pre>
@@ -702,11 +672,11 @@
 <h4 id="1memory-jvm">1.memory 查看JVM 内存信息<a class="headerlink" href="#1memory-jvm" title="Permanent link">&para;</a></h4>
 <pre><code>memory
 </code></pre>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1657112027345-fc0fd1de-04d7-4a45-8e95-516131512696.png?x-oss-process=image%2Fresize%2Cw_1142%2Climit_0" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601762515134734/b38e98fb_5094274.png" /></p>
 <h4 id="2thread">2.thread 获取当前线程执行情况<a class="headerlink" href="#2thread" title="Permanent link">&para;</a></h4>
 <pre><code>thread
 </code></pre>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1657196518734-8b769ee1-35eb-404b-b6e3-fa94c5745dc8.png?x-oss-process=image%2Fresize%2Cw_1136%2Climit_0" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601794018102932/39f7c804_5094274.png" /></p>
 <h4 id="3trace">3.trace 查看方法耗时<a class="headerlink" href="#3trace" title="Permanent link">&para;</a></h4>
 <p>参数</p>
 <p>● -n: 命令捕捉次数，达到设置次数后自动退出该命令</p>
@@ -714,7 +684,7 @@
 <p>例：查看com.example.demo.service.AdminService类中getUsers各方法执行耗时</p>
 <pre><code>trace com.example.demo.service.AdminService getUsers  -n 5 --skipJDKMethod false
 </code></pre>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1657202067191-6cf5b446-d79d-4db0-9cd4-5272af78136b.png?x-oss-process=image%2Fresize%2Cw_1140%2Climit_0" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601836189488130/8d3fcfc0_5094274.png" /></p>
 <h4 id="4-watch">4 watch 方法出入参<a class="headerlink" href="#4-watch" title="Permanent link">&para;</a></h4>
 <p>● -n: 命令捕捉次数，达到设置次数后自动退出该命令</p>
 <p>● express：默认值{params,returnObj,throwExp}，分别代表，入参、出参、异常</p>
@@ -760,9 +730,9 @@ null,
 <p>例：</p>
 <pre><code>tt -t com.soomey.controller.authorized.merchant.setting.SettingController loadFormConfig -n 5
 </code></pre>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1658719471155-21b0b6e6-9947-4507-98b7-823dc28fced4.png?x-oss-process=image%2Fresize%2Cw_1098%2Climit_0" />
+<p><img alt="" src="https://foruda.gitee.com/images/1685601888482740299/bd02c335_5094274.png" />
 再次输入观察的序号 <code>tt -p -i 1000</code> 则可以可以查看序号为1000记录的具体调用信息，出入参与方法耗时等等
-<img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1658719751869-d1bdadb0-c252-4069-9e70-636dade742f1.png?x-oss-process=image%2Fresize%2Cw_1150%2Climit_0" />
+<img alt="" src="https://foruda.gitee.com/images/1685601914044976010/69ebf034_5094274.png" />
 还可以使用 <code>-w</code>与时空隧道使用ognl 表达式执行其他方方法</p>
 <p>例： 执行调用序号为1000的controller中的getDerivativePictureSettingData()方法</p>
 <pre><code>tt -i 1000 -w 'target.getDerivativePictureSettingData()'
@@ -771,7 +741,7 @@ null,
 <p><code>sc</code>查看 JVM 已加载的类信息</p>
 <pre><code>sc -d com.soomey.util.MogujieUtils
 </code></pre>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2022/png/22527471/1659334078511-001342bd-9f57-471a-be07-2d0ae25aced6.png?x-oss-process=image%2Fresize%2Cw_1216%2Climit_0" /></p>
+<p><img alt="" src="https://foruda.gitee.com/images/1685601948722436518/5add6f8f_5094274.png" /></p>
 <p>获取到类加载器hashcode值，根据ognl表达式即可执行当前类中某个方法</p>
 <pre><code>ognl -c 54ba4f78 '@com.soomey.util.MogujieUtils@getDecryptId("85C47D13A725FF56178934CE4038D38E","114q")'
 </code></pre>
