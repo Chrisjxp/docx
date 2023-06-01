@@ -697,7 +697,8 @@ timestamp/uptime                                                      Thu Feb 23
 &quot;C2 CompilerThread0&quot; [Internal] cpuUsage=25.92% deltaTime=64ms time=300015ms
 </code></pre>
 <p>找出对应方法进行优化</p>
-<p><img alt="" src="https://product.resources.deepdraw.biz/BJ/molly/c72d1cc7ae9547db89c7d55ed03c6a68/original/9d4abcb3cc47415685838ad431d4b5ce.png" /></p>
+<p><img alt="" src="https://product.resources.deepdraw.biz/zj/JNBYI/8fcf8a43da4c45109e46699854b0c83b/original/15994704447b4f0ba70dd6f8ccc407c6.png" /></p>
+<p><img alt="" src="/Users/hk/Documents/GitHub/docx/mkdocs-site/iamge/2.png" /></p>
 <p>根据以上栈堆信息找到发现导致接口卡顿主要为/masaimara/ppa改接口导致，该接口主要是接收masaimara服务图片分析数据进行db落库，没有采用分批批量插入的方式插入，导致占用过的池没有释放</p>
 
 
