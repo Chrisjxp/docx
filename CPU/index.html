@@ -567,7 +567,7 @@
 </code></pre>
 <p>发现网络返回数据并无异常</p>
 <p>通过阿里云监控查看服务器状态，当然也可以使用 <code>top</code> 命令或者 <code>htop</code> 命令来检查 CPU 使用率
-<img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1677507460981-9e6bcae1-f8a7-41f1-8909-6fc6f2fd8272.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_22%2Ctext_eXVxdWUudHo%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10" /></p>
+<img alt="" src="https://product.resources.deepdraw.biz/BJ/molly/c72d1cc7ae9547db89c7d55ed03c6a68/original/ded680d475964ad9b66e0de55c1f8501.png" /></p>
 <p>发现 CPU 使用率过高，可能会导致服务器性能严重下降。</p>
 <h3 id="arthas">进入终端服务器使用Arthas<a class="headerlink" href="#arthas" title="Permanent link">&para;</a></h3>
 <blockquote>
@@ -697,7 +697,7 @@ timestamp/uptime                                                      Thu Feb 23
 &quot;C2 CompilerThread0&quot; [Internal] cpuUsage=25.92% deltaTime=64ms time=300015ms
 </code></pre>
 <p>找出对应方法进行优化</p>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1677141958175-72028098-f772-4bba-821c-8cf842ffc7f4.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_64%2Ctext_eXVxdWUudHo%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fresize%2Cw_1500%2Climit_0" /></p>
+<p><img alt="" src="https://product.resources.deepdraw.biz/BJ/molly/c72d1cc7ae9547db89c7d55ed03c6a68/original/9d4abcb3cc47415685838ad431d4b5ce.png" /></p>
 <p>根据以上栈堆信息找到发现导致接口卡顿主要为/masaimara/ppa改接口导致，该接口主要是接收masaimara服务图片分析数据进行db落库，没有采用分批批量插入的方式插入，导致占用过的池没有释放</p>
 
 
