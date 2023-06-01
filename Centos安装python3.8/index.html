@@ -11,17 +11,17 @@
       
       
       
-        <link rel="prev" href="../MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/">
+        <link rel="prev" href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/">
       
       
-        <link rel="next" href="../synchronized%E5%85%B3%E9%94%AE%E5%AD%97/">
+        <link rel="next" href="../CPU/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>将Nacos加入到你的项目 - Tanzhuo Blog</title>
+        <title>Centos安装python3.8运行环境 - Tanzhuo Blog</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nacos" class="md-skip">
+        <a href="#centospython38" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              将Nacos加入到你的项目
+              Centos安装python3.8运行环境
             
           </span>
         </div>
@@ -227,11 +227,135 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Centos%E5%AE%89%E8%A3%85python3.8/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Centos安装python3.8运行环境
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Centos安装python3.8运行环境
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yum" class="md-nav__link">
+    使用 yum 命令安装必要的依赖项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-38" class="md-nav__link">
+    下载 Python 3.8 的源代码包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    解压源代码包并进入解压后的目录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    配置 Python 安装选项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_1" class="md-nav__link">
+    编译 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    安装 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pip" class="md-nav__link">
+    更新pip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    配置虚拟环境
+  </a>
+  
+    <nav class="md-nav" aria-label="配置虚拟环境">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtualenv" class="md-nav__link">
+    安装virtualenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    创建虚拟环境
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    激活虚拟环境
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    退出虚拟环境
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -422,66 +546,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          将Nacos加入到你的项目
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../nacos/" class="md-nav__link">
         将Nacos加入到你的项目
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    如何安装
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#nacos_1" class="md-nav__link">
-    启动Nacos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#springboot" class="md-nav__link">
-    集成Springboot
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -528,23 +597,92 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#yum" class="md-nav__link">
+    使用 yum 命令安装必要的依赖项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-38" class="md-nav__link">
+    下载 Python 3.8 的源代码包
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    如何安装
+    解压源代码包并进入解压后的目录
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nacos_1" class="md-nav__link">
-    启动Nacos
+  <a href="#python" class="md-nav__link">
+    配置 Python 安装选项
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#springboot" class="md-nav__link">
-    集成Springboot
+  <a href="#python_1" class="md-nav__link">
+    编译 Python
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python_2" class="md-nav__link">
+    安装 Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pip" class="md-nav__link">
+    更新pip
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    配置虚拟环境
+  </a>
+  
+    <nav class="md-nav" aria-label="配置虚拟环境">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtualenv" class="md-nav__link">
+    安装virtualenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    创建虚拟环境
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    激活虚拟环境
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    退出虚拟环境
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -563,77 +701,45 @@
                   
 
 
-<h1 id="nacos">Nacos<a class="headerlink" href="#nacos" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>Nacos 是一个基于云原生的动态服务发现、配置和管理平台，它可以帮助开发者更好地实现微服务架构中的动态服务发现和配置管理。</p>
-</blockquote>
-<h3 id="_1">如何安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p><a href="https://nacos.io/zh-cn/docs/quick-start.html">官方文档</a></p>
-<p><strong>下载安装包</strong></p>
-<p>通过 <a href="https://github.com/alibaba/nacos/releases">Github</a> 选择你要下载 的压缩包，最好下载最新版本</p>
-<p><strong>初始化数据</strong></p>
-<p>创建数据库</p>
-<pre><code>CREATE DATABASE nacos_config DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+<h1 id="centospython38">Centos安装python3.8<a class="headerlink" href="#centospython38" title="Permanent link">&para;</a></h1>
+<h3 id="yum">使用 yum 命令安装必要的依赖项<a class="headerlink" href="#yum" title="Permanent link">&para;</a></h3>
+<pre><code>sudo yum install gcc openssl-devel bzip2-devel libffi-devel
 </code></pre>
-<p>执行 Nacos 服务端包中的 SQL 脚本来初始化数据库，脚本文件位于路径 nacos/conf/nacos-mysql.sql。</p>
-<blockquote>
-<p>${NACOS_HOME}：Nacos Server 所在的目录</p>
-</blockquote>
-<pre><code>mysql -uroot -p nacos_config &lt; ${NACOS_HOME}/conf/mysql-schema.sql
+<h3 id="python-38">下载 Python 3.8 的源代码包<a class="headerlink" href="#python-38" title="Permanent link">&para;</a></h3>
+<pre><code>cd ~
+wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz
 </code></pre>
-<p>修改 application.properties，放开对应mysql注释填写自己mysql地址</p>
-<pre><code>db.num=1
-db.url.0=jdbc:mysql://127.0.0.1:3306/nacos?characterEncoding=utf8&amp;connectTimeout=1000&amp;socketTimeout=3000&amp;autoReconnect=true&amp;useUnicode=true&amp;useSSL=false&amp;serverTimezone=UTC
-db.user=root
-db.password.0=1234
+<h3 id="_1">解压源代码包并进入解压后的目录<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<pre><code>tar xzf Python-3.8.0.tgz
+cd Python-3.8.0
 </code></pre>
-<h3 id="nacos_1">启动Nacos<a class="headerlink" href="#nacos_1" title="Permanent link">&para;</a></h3>
-<p>进入Nacos的 bin 目录下，使用以下命令启动 Nacos</p>
-<pre><code>sh startup.sh -m standalone
+<h3 id="python">配置 Python 安装选项<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<pre><code>./configure --enable-optimizations
 </code></pre>
-<h2 id="springboot">集成Springboot<a class="headerlink" href="#springboot" title="Permanent link">&para;</a></h2>
-<p>添加maven依赖</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;com.alibaba.cloud&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-cloud-starter-alibaba-nacos-config&lt;/artifactId&gt;
-    &lt;version&gt;2021.1&lt;/version&gt;
-&lt;/dependency&gt;
+<h3 id="python_1">编译 Python<a class="headerlink" href="#python_1" title="Permanent link">&para;</a></h3>
+<pre><code>make
 </code></pre>
-<p>在 <code>application.yml</code>文件中添加Nacos的地址与namespac空间命名的名称</p>
-<pre><code>nacos:
-  config:
-    bootstrap:
-      #开启系统启动时预读取nacos的配置，用于满足@Value注入数据的场景
-      enable: true
-    # 配置所属命名空间的id,此处我们配置名称为dev的id，可以在命名空间列表查看id的值
-    namespace: demo-namespace
-    # 配置所属分组
-    group: DEFAULT_GROUP
-    # 配置ID
-    data-id: demo
-    # 配置文件类型,对应nacos配置页面的配置格式，默认是properties
-    type: yaml
-    # nacos服务器地址
-    server-addr: 127.0.0.1:8848
-    # 开启自动刷新nacos配置
-    auto-refresh: true
-    # 针对配置项同名的情况，是否允许nacos的配置覆盖本地的配置
-    remote-first: true
-  discovery:
-    server-addr:127.0.0.1:8848
-
+<h3 id="python_2">安装 Python<a class="headerlink" href="#python_2" title="Permanent link">&para;</a></h3>
+<pre><code>sudo make altinstall
 </code></pre>
-<p>应用程序的启动类中添加 <code>@EnableDiscoveryClient</code>注解</p>
-<pre><code>@SpringBootApplication
-@EnableDiscoveryClient
-public class MinioDemoApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(MinioDemoApplication.class, args);
-    }
-
-}
-
+<p>安装完成后，验证 Python 是否已成功更新</p>
+<pre><code>python3.8 --version
+</code></pre>
+<h3 id="pip">更新pip<a class="headerlink" href="#pip" title="Permanent link">&para;</a></h3>
+<pre><code> python3.8 -m pip install --upgrade pip
+</code></pre>
+<h2 id="_2">配置虚拟环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="virtualenv">安装virtualenv<a class="headerlink" href="#virtualenv" title="Permanent link">&para;</a></h3>
+<pre><code>pip install virtualenv
+</code></pre>
+<h3 id="_3">创建虚拟环境<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<pre><code>virtualenv -p /usr/local/bin/python3.8 myenv
+</code></pre>
+<h3 id="_4">激活虚拟环境<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<pre><code>source myenv/bin/activate
+</code></pre>
+<h3 id="_5">退出虚拟环境<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<pre><code>deactivate      #---任何目录下，都可以
 </code></pre>
 
 
