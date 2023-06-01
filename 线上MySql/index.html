@@ -11,17 +11,17 @@
       
       
       
-        <link rel="prev" href="../CPU/">
+        <link rel="prev" href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/">
       
       
-        <link rel="next" href="../Mybatis-Plus/">
+        <link rel="next" href="../Centos%E5%AE%89%E8%A3%85python3.8/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>内存可见性 - Tanzhuo Blog</title>
+        <title>如何利用线上MySql binlog排查问题 - Tanzhuo Blog</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#mysql-binlog" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              内存可见性
+              如何利用线上MySql binlog排查问题
             
           </span>
         </div>
@@ -227,11 +227,75 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../%E7%BA%BF%E4%B8%8AMySql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          如何利用线上MySql binlog排查问题
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         如何利用线上MySql binlog排查问题
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mysql-binlog" class="md-nav__link">
+    解析MySql binlog
+  </a>
+  
+    <nav class="md-nav" aria-label="解析MySql binlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    具体操作命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    参数说明
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    解析后日志
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -272,94 +336,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          内存可见性
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E5%86%85%E5%AD%98%E5%8F%AF%E8%A7%81%E6%80%A7/" class="md-nav__link">
         内存可见性
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    并发编程数据安全出现的原因
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#java-jmm" class="md-nav__link">
-    JAVA存模型 JMM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demo" class="md-nav__link">
-    来看一下一个简易的demo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    cpu结构
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    内存不可见带来的影响
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#volatile" class="md-nav__link">
-    volatile 关键字的作用
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#longdouble" class="md-nav__link">
-    Long与Double在多线程中的情况
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -561,8 +542,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -571,51 +550,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mysql-binlog" class="md-nav__link">
+    解析MySql binlog
+  </a>
+  
+    <nav class="md-nav" aria-label="解析MySql binlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    具体操作命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    并发编程数据安全出现的原因
+    参数说明
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#java-jmm" class="md-nav__link">
-    JAVA存模型 JMM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demo" class="md-nav__link">
-    来看一下一个简易的demo
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpu" class="md-nav__link">
-    cpu结构
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    内存不可见带来的影响
+    解析后日志
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#volatile" class="md-nav__link">
-    volatile 关键字的作用
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#longdouble" class="md-nav__link">
-    Long与Double在多线程中的情况
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -634,109 +598,63 @@
                   
 
 
-<h1 id="_1">内存可见性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+  <h1>如何利用线上MySql binlog排查问题</h1>
+
+<h2 id="mysql-binlog">解析MySql binlog<a class="headerlink" href="#mysql-binlog" title="Permanent link">&para;</a></h2>
+<p>如何拿到线上binlog日志 解析出来拿到自己想要的信息，这里使用的是mysqlbinlog 解析 </p>
+<h3 id="_1">具体操作命令<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<pre><code>./mysqlbinlog /Users/hk/Downloads/mysql-bin.000011  --base64-output=decode-rows -v --skip-gtids=true |grep -C 100 -i &quot;brands&quot; &gt; /Users/hk/Downloads/brands.log
+</code></pre>
+<h3 id="_2">参数说明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><code>./mysqlbinlog</code>:</p>
+<p>用于解析MySQL二进制日志的命令，用于将二进制日志转换为可读的纯文本格式。</p>
+<p><code>/Users/hk/Downloads/mysql-bin.000011</code>：</p>
+<p>解析的二进制日志文件的路径和文件名。</p>
+<p><code>--base64-output=decode-rows</code>：</p>
+<p>以可读的形式输出二进制日志记录，具体来说是以decode-rows格式输出，这通常用于解析二进制日志中的INSERT、UPDATE和DELETE语句。</p>
+<p><code>-v</code>：</p>
+<p>以详细模式输出解析过的二进制日志，输出信息包括每个日志事件的详细信息，如时间戳、数据库名、表名、事件类型等。</p>
+<p><code>--skip-gtids=true</code>：</p>
+<p>跳过GTID相关的信息，GTID是一个全局唯一标识符，用于跟踪在不同MySQL实例之间的复制操作。在这个参数被设置为true时，mysqlbinlog将忽略GTID信息。</p>
+<p><code>| grep -C 100 -i "brands"</code>：</p>
+<p>将mysqlbinlog命令输出的文本通过管道（|）传递给grep命令。grep是一个用于搜索文本的命令。这个特定的grep命令将会：匹配包含"brands"字符串的行，并输出其前后100行的内容（用于显示上下文），并将搜索结果输出到屏幕上。</p>
 <blockquote>
-<p>线程之间通信，有主存和工作内存的概念，线程执行的一般三个步骤： 从1、主存读取数据 2、修改数据 3、写回主存。如果有两个线程。A线程执行修改以后不能及时同步到共享内存中， 则对B线程来说，数据是不可见的，如果B线程再试图去操作内存，那么就会产生数据安全问题</p>
+<p>/Users/hk/Downloads/brands.log: 这个参数是将搜索结果输出到brands.log文件中。输出重定向运算符&gt;将命令的标准输出（即控制台上的输出）重定向到指定的文件中。</p>
 </blockquote>
-<h3 id="_2">并发编程数据安全出现的原因<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>1、内存不可见（线程A无法看到线程Bcpu缓存中所修改的内容）</p>
-<p>2、cpu不是原子性（同一段逻辑操作cpu会使用不同线程分时复用去执行）</p>
-<p>3、无序性（编译器和处理起会对代码进行指令重排，先执行的代码可能后执行）</p>
-<h3 id="java-jmm">JAVA存模型 JMM<a class="headerlink" href="#java-jmm" title="Permanent link">&para;</a></h3>
-<p>定义了如何在单线程或多线程环境中的线程和硬件之间进行数据的存储和交换。 围绕着在并发过程中如何处理<strong>可见性</strong>、<strong>原子性</strong>、<strong>有序性</strong>这三个特性而建立的模型。</p>
-<p>JMM定义了每个线程与中的副本与主内存的关系，每个线程会有单独的副本，从主内存中copy出来存入自己的线程副本中，（在 java 中，所有实例域、静态域和数组元素存储在堆内存中，局部变量，方法参数与异常参数则是存储在线程栈中，并不共享，固不会出现安全问题）</p>
-<h3 id="demo">来看一下一个简易的demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h3>
-<pre><code>public static int i = 0;
-
-public static void main(String[] args) throws Exception {
-    for (int i = 0; i &lt; 10; i++) {
-        new Thread(Demo::sum).start();
-    }
-    Thread.sleep(3000);
-    System.out.println(i);
-}
-
-private static void sum() {
-    while (i &lt; 10000) {
-        i++;
-    }
-}
+<h3 id="_3">解析后日志<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<pre><code>#230425 20:40:03 server id 2727657857  end_log_pos 381609609 CRC32 0x5ed1b475   Delete_rows: table id 13129 flags: STMT_END_F
+### DELETE FROM `soomey`.`brands`
+### WHERE
+###   @1=1490
+###   @2='播'
+###   @3='VIP'
+###   @4='2022-10-24 11:38:29'
+###   @5=b'0'
+###   @6=346831
+### DELETE FROM `soomey`.`brands`
+### WHERE
+###   @1=1490
+###   @2='broadcast/播'
+###   @3='TMALL'
+###   @4='2022-10-24 11:38:29'
+###   @5=b'0'
+###   @6=346832
+### DELETE FROM `soomey`.`brands`
+### WHERE
+###   @1=1490
+###   @2='播（broadcast）'
+###   @3='JD'
+###   @4='2022-10-24 11:38:29'
+###   @5=b'0'
+###   @6=346833
+### DELETE FROM `soomey`.`brands`
+### WHERE
+###   @1=1490
+###   @2='播 broadcast'
+###   @3='DOUYIN'
+###   @4='2022-10-24 11:38:29'
+###   @5=b'0'
 </code></pre>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1685022991229-36fe7ae7-222c-40c1-9f0d-4ba5e5d67fdb.png" /></p>
-<p>由于变量i为静态域处于共享内存中，当结果输出10001说明当某个线程去拿到主内存中i变量时，某个线程正在修改自己线程副本中的i变量但是却没有及时同步到主内存中去，并且i++这个操作并不是原子性操作，所以导致其他线程去内存中同步自身线程副本中的数据时拿到了脏数据，造成了线程安全问题，期望值是10000但是输出的结果却是为10001</p>
-<p><img alt="" src="https://foruda.gitee.com/images/1685601063656526701/78908dff_5094274.png" /></p>
-<p>那么造成变量i输出值为10001的过程大致如下
-<img alt="" src="https://foruda.gitee.com/images/1685601101572240362/a51842b4_5094274.png" /></p>
-<h3 id="cpu">cpu结构<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1685023407915-d9d31c75-40a8-4691-99ba-9dc7d146473e.png" /></p>
-<h3 id="_3">内存不可见带来的影响<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>下面来看另外一段代码，期望程序运行的结果是线程A与线程B交替执行各50次，然而，该代码段执行的结果可能是执行一次后将永远挂起</p>
-<pre><code>
-private  static boolean flag = false;
-
-public static void main(String[] args) {
-    new Thread(() -&gt; {
-        int num = 1;
-        while (num &lt;= 50) {
-            if (flag) {
-                System.out.println(&quot;线程A执行&quot; + num);
-                flag = false;
-                num++;
-            }
-        }
-    }).start();
-    new Thread(() -&gt; {
-        int num = 1;
-        while (num &lt;= 50) {
-            if (!flag) {
-                System.out.println(&quot;线程B执行&quot; + num);
-                flag = true;
-                num++;
-            }
-        }
-    }).start();
-
-}
-</code></pre>
-<p><img alt="" src="https://foruda.gitee.com/images/1685601136854763297/298557ce_5094274.png" /></p>
-<p>由于线程的不可见性线程A与线程B的工作内存并不共享，相对独立，线程A与线程B并不能及时知道对方对主内存的flag变量的任何操作，所以程序运行起来则会造成假死状态 ，Java 内存模型的抽象示意图如下
-<img alt="" src="https://foruda.gitee.com/images/1685601174212346886/c14de467_5094274.png" /></p>
-<h3 id="volatile">volatile 关键字的作用<a class="headerlink" href="#volatile" title="Permanent link">&para;</a></h3>
-<p>为了解决如上问题，JDK5开始引入了关键字<code>volatile</code>
-JSR-133规范中，定义了关键字<code>volatile</code>，当被该关键字修饰的变量，线程将会将每一次写的操作都同步到主内存中，<code>volatile</code> 每一次写入操作都在读取操作之前，所以volatile也可以是被称作为一种轻量级的锁，他能够保证线程的中的变量是可见的，可以利用这一点去做到线程之间的通信。
-那么将上诉代码稍作改动，为了确保对变量i的更新可以传播到其他线程，我们应该将<code>volatile</code> 修饰符应用于<code>i</code>变量</p>
-<pre><code>private volatile static boolean flag = false;
-
-public static void main(String[] args) {
-    new Thread(() -&gt; {
-        int num = 1;
-        while (num &lt;= 50) {
-            if (flag) {
-                System.out.println(&quot;线程A执行&quot; + num);
-                flag = false;
-                num++;
-            }
-        }
-    }).start();
-    new Thread(() -&gt; {
-        int num = 1;
-        while (num &lt;= 50) {
-            if (!flag) {
-                System.out.println(&quot;线程B执行&quot; + num);
-                flag = true;
-                num++;
-            }
-        }
-    }).start();
-}
-</code></pre>
-<p><img alt="" src="https://foruda.gitee.com/images/1685601214457169899/d426dbaa_5094274.png" />
-如上所述，我们运行时与不同核心处理器进行通信，以不重新排序任何涉及<code>volatile</code>变量的指令。此外，处理器会立即刷新对这些变量的任何更新。</p>
-<p><img alt="" src="https://foruda.gitee.com/images/1685601346441168580/12ecbcbf_5094274.png" /></p>
-<p><code>volatile</code>可以帮助确保数据更改的可见性与避免部分指令重排序，而不提供互斥。因此，它在我们可以允许多个线程并行执行代码块的地方很有用，我们只需要确保可见性</p>
-<h3 id="longdouble">Long与Double在多线程中的情况<a class="headerlink" href="#longdouble" title="Permanent link">&para;</a></h3>
-<p>JAVA的内存模型只保证了基本变量的读取操作和写入操作都必须是原子操作的，但是对于64位存储的Long和Double类型来说，JVM读操作和写操作是分开的，分解为2个32位的操作，
-如果不做任何处理，当多个线程读取Long变量或Double变量时，可能出现读取这个变量一个值的高32位和另一个值的低32位，从而导致数据的错乱。所以如果要在共享内存中声明Long和Double字段，那么必须在<code>synchronized</code>中操作或使用<code>volatile</code>做为修饰符</p>
 
 
 
