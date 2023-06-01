@@ -11,17 +11,21 @@
       
       
       
+        <link rel="prev" href="../JAVA%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E6%96%B9%E5%BC%8F%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/">
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      
+        <link rel="next" href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>My Blog</title>
+        <title>Kubernetes使用Arthas - My Blog</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
       
       
 
@@ -37,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#kubernetesarthas" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -70,7 +79,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="My Blog" class="md-header__button md-logo" aria-label="My Blog" data-md-component="logo">
+    <a href=".." title="My Blog" class="md-header__button md-logo" aria-label="My Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Kubernetes使用Arthas
             
           </span>
         </div>
@@ -156,7 +165,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="My Blog" class="md-nav__button md-logo" aria-label="My Blog" data-md-component="logo">
+    <a href=".." title="My Blog" class="md-nav__button md-logo" aria-label="My Blog" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -175,7 +184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         关于我
       </a>
     </li>
@@ -190,7 +199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         使用minikube安装Kubernetes
       </a>
     </li>
@@ -205,7 +214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Centos安装python3.8.md" class="md-nav__link">
+      <a href="../Centos安装python3.8.md" class="md-nav__link">
         Centos安装python3.8
       </a>
     </li>
@@ -220,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/%E6%9C%8D%E5%8A%A1%E5%99%A8CPU%E6%BB%A1%E8%BD%BD%E6%8E%92%E6%9F%A5/" class="md-nav__link">
+      <a href="../%E6%9C%8D%E5%8A%A1%E5%99%A8CPU%E6%BB%A1%E8%BD%BD%E6%8E%92%E6%9F%A5/" class="md-nav__link">
         服务器CPU满载排查
       </a>
     </li>
@@ -235,7 +244,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/%E5%86%85%E5%AD%98%E5%8F%AF%E8%A7%81%E6%80%A7/" class="md-nav__link">
+      <a href="../%E5%86%85%E5%AD%98%E5%8F%AF%E8%A7%81%E6%80%A7/" class="md-nav__link">
         内存可见性
       </a>
     </li>
@@ -250,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Mybatis-Plus/" class="md-nav__link">
+      <a href="../Mybatis-Plus/" class="md-nav__link">
         Mybatis-Plus
       </a>
     </li>
@@ -265,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/%E4%BD%BF%E7%94%A8minikube%E5%AE%89%E8%A3%85Kubernetes/" class="md-nav__link">
+      <a href="../%E4%BD%BF%E7%94%A8minikube%E5%AE%89%E8%A3%85Kubernetes/" class="md-nav__link">
         使用minikube安装Kubernetes
       </a>
     </li>
@@ -280,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92/" class="md-nav__link">
+      <a href="../%E6%8C%87%E4%BB%A4%E9%87%8D%E6%8E%92/" class="md-nav__link">
         指令重排
       </a>
     </li>
@@ -295,7 +304,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Arthas/" class="md-nav__link">
+      <a href="../Arthas/" class="md-nav__link">
         Arthas
       </a>
     </li>
@@ -310,7 +319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Arthas%E6%8F%92%E4%BB%B6/" class="md-nav__link">
+      <a href="../Arthas%E6%8F%92%E4%BB%B6/" class="md-nav__link">
         Arthas插件
       </a>
     </li>
@@ -325,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Elasticsearch%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="md-nav__link">
+      <a href="../Elasticsearch%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="md-nav__link">
         Elasticsearch 基本使用
       </a>
     </li>
@@ -340,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Grafana%20%E4%BD%BF%E7%94%A8%20Elasticsearch%20%E4%BD%9C%E4%B8%BA%E6%95%B0%E6%8D%AE%E6%BA%90/" class="md-nav__link">
+      <a href="../Grafana%20%E4%BD%BF%E7%94%A8%20Elasticsearch%20%E4%BD%9C%E4%B8%BA%E6%95%B0%E6%8D%AE%E6%BA%90/" class="md-nav__link">
         Grafana 使用 Elasticsearch 作为数据源
       </a>
     </li>
@@ -355,7 +364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/JAVA%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E6%96%B9%E5%BC%8F%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/" class="md-nav__link">
+      <a href="../JAVA%E6%96%87%E4%BB%B6%E8%A7%A3%E5%8E%8B%E6%96%B9%E5%BC%8F%E6%95%88%E7%8E%87%E5%AF%B9%E6%AF%94/" class="md-nav__link">
         JAVA文件解压方式效率对比
       </a>
     </li>
@@ -368,11 +377,59 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/Kubernetes%E4%BD%BF%E7%94%A8Arthas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Kubernetes使用Arthas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Kubernetes使用Arthas
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kubectl" class="md-nav__link">
+    首先先安装kubectl
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arthas" class="md-nav__link">
+    容器内安装并启动arthas
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -385,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
+      <a href="../mac%E5%AE%89%E8%A3%85GraphicsMagick/" class="md-nav__link">
         GraphicsMagick使用教程
       </a>
     </li>
@@ -400,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
+      <a href="../MESI%E5%8D%8F%E8%AE%AE%E4%B8%8EMOESI%E5%8D%8F%E8%AE%AE/" class="md-nav__link">
         MESI协议与MOESI协议
       </a>
     </li>
@@ -415,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/nacos/" class="md-nav__link">
+      <a href="../nacos/" class="md-nav__link">
         将Nacos加入到你的项目
       </a>
     </li>
@@ -430,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/redis/" class="md-nav__link">
+      <a href="../redis/" class="md-nav__link">
         Lua如何在Redis Run
       </a>
     </li>
@@ -445,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/synchronized%E5%85%B3%E9%94%AE%E5%AD%97/" class="md-nav__link">
+      <a href="../synchronized%E5%85%B3%E9%94%AE%E5%AD%97/" class="md-nav__link">
         synchronized关键字
       </a>
     </li>
@@ -469,6 +526,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kubectl" class="md-nav__link">
+    首先先安装kubectl
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arthas" class="md-nav__link">
+    容器内安装并启动arthas
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -480,8 +561,32 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="kubernetesarthas">Kubernetes使用Arthas<a class="headerlink" href="#kubernetesarthas" title="Permanent link">&para;</a></h1>
+<h3 id="kubectl">首先先安装kubectl<a class="headerlink" href="#kubectl" title="Permanent link">&para;</a></h3>
+<p><a href="https://kubernetes.io/docs/tasks/tools/?spm=5176.2020520152.0.0.67b616dd7IeEDR">下载地址</a></p>
+<p>将以下内容复制到计算机 $HOME/.kube/config 文件下（阿里云容器内环境凭证，容器服务-连接信息）</p>
+<p><img alt="" src="https://cdn.nlark.com/yuque/0/2023/png/22527471/1677145006869-59d73c3a-2fa5-4eca-94a3-2f16ba8ea9af.png?x-oss-process=image%2Fwatermark%2Ctype_d3F5LW1pY3JvaGVp%2Csize_73%2Ctext_eXVxdWUudHo%3D%2Ccolor_FFFFFF%2Cshadow_50%2Ct_80%2Cg_se%2Cx_10%2Cy_10%2Fresize%2Cw_1500%2Climit_0" /></p>
+<p>通过 <code>kubectl get pod</code>获取端口，选择服务器，<code>kubectl exec -it pod bash</code> 启动服务器</p>
+<h3 id="arthas">容器内安装并启动arthas<a class="headerlink" href="#arthas" title="Permanent link">&para;</a></h3>
+<pre><code>curl -O https://arthas.aliyun.com/arthas-boot.jar
+java -jar arthas-boot.jarcurl -O https://arthas.aliyun.com/arthas-boot.jar
+java -jar arthas-boot.jar
+</code></pre>
+<p>切换k8s环境变量</p>
+<pre><code>export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config
+</code></pre>
+<p>查看k8s配置</p>
+<pre><code>Kubectl config view
+</code></pre>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -513,10 +618,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
       
     
   </body>
