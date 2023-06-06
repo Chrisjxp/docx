@@ -249,20 +249,27 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    环境准备
+    实现效果
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    导入库
+    环境准备
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    导入库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     完整代码
   </a>
   
@@ -559,20 +566,27 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    环境准备
+    实现效果
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    导入库
+    环境准备
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    导入库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     完整代码
   </a>
   
@@ -594,14 +608,16 @@
 
 
 <h1 id="streamlitchatgtp">如何利用streamlit构建属于你的ChatGTP<a class="headerlink" href="#streamlitchatgtp" title="Permanent link">&para;</a></h1>
-<h3 id="_1">环境准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="_1">实现效果<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://foruda.gitee.com/images/1686036034232104459/983df910_5094274.gif" /></p>
+<h3 id="_2">环境准备<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p>本地安装<code>Python 3.10</code></p>
 <p>登录 <a href="https://chat.openai.com/">OpenAI官网</a>左侧页面中，找到API Keys，创建属于你的的API Key。</p>
 <p>比如我的是（请使用自己的，不要白嫖🤣）</p>
 <pre><code>sk-myNds72DQ22BVwcwqhfWjkashdouymxSnChJhPpN7OQ4vWi9
 </code></pre>
 <p><img alt="" src="https://img-blog.csdnimg.cn/img_convert/06142e119aa0473a972e67a7844ce565.png" /></p>
-<h3 id="_2">导入库<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="_3">导入库<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <pre><code>pip install streamlit openai streamlit-pills
 </code></pre>
 <pre><code>Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,&gt;=0.14.0
@@ -633,7 +649,7 @@ response =openai.Completion.create(model='text-davinci-003',
 # 输出chatgtp返回内容
 print(response.choices[0].text)
 </code></pre>
-<h3 id="_3">完整代码<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_4">完整代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <pre><code>import openai
 import streamlit as st
 
